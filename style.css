@@ -103,11 +103,37 @@ a:hover {
 .feature-item::before {
   content: "";
   display: inline-block;
-  width: 100px;
-  height: 100px;
-  background-color: blue;
+  width: 270px;
+  height: 120px;
+  top: 774px;
+  left: 215px;
+  border-radius: 4px;
+  background-color:#F5F4FA;
 }
-
+.feature-item:nth-child(1)::before{
+background-image: url(./images/antenna.png);
+padding-top: 25px;
+padding-bottom: 100px;
+}
+.feature-item:nth-child(2)::before{
+  background-image: url(./images/clock.png);
+  padding-top: 25px;
+padding-bottom: 100px;
+}
+.feature-item:nth-child(3)::before{
+  background-image: url(/images/diagram.png);
+  width: 70;
+  height: 70;
+  top: 799px;
+  left: 615px;
+  padding-top: 25px;
+padding-bottom: 100px;
+}
+.feature-item:nth-child(4)::before{
+  background-image: url(./images/astronaut.png);
+  padding-top: 25px;
+padding-bottom: 100px;
+}
 .servise-title {
   text-align: center;
   margin-bottom: 50px;
@@ -141,7 +167,7 @@ a:hover {
   text-align: center;
   margin-bottom: 50px;
   font-size: 36px;
-  font-weight: ;
+  font-weight: 700px;
 }
 
 .team-member {
