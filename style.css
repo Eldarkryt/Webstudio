@@ -13,8 +13,8 @@
 }
 
 body {
-  font-family: "Roboto",sans-serif;
-  background-color: var(--background-color);
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
   color: var(--text-color);
 }
 
@@ -36,6 +36,10 @@ a:hover {
   border: 2px solid red;
 }
 .logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
   font-size: 28px;
   font-weight: bold;
   color: #000;
@@ -51,21 +55,27 @@ a:hover {
 }
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
   padding: 20px 0;
   flex-wrap: wrap;
   gap: 15px;
 }
 .nav-list {
-  justify-content: space-between;
   display: flex;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  justify-content: flex-start;
   gap: 20px;
   list-style: none;
 }
+.nav-item {
+  margin-left: 50px;
+}
 
-.contact-email,
-.contact-phone {
+.header-contact {
+  display: flex;
   text-decoration: none;
   color: #212121;
   gap: 50px;
@@ -73,7 +83,8 @@ a:hover {
 .hero {
   text-align: center;
   padding: 200px 0;
-  background-color: rgba(47, 48, 58, 1);
+  background-image:linear-gradient(to center,rgba(47, 48, 58, 0.4)) url(./images/sima.png);
+  /* background-color: rgba(47, 48, 58, 1); */
   margin-bottom: 94px;
 }
 .hero-title {
@@ -83,6 +94,13 @@ a:hover {
   margin-bottom: 94px;
 }
 .hero-button {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  width: 216px;
+  height: 50px;
+  border-radius: 4px;
   color: #fff;
   background-color: rgba(33, 150, 243, 1);
   padding: 10px 32px;
@@ -105,38 +123,27 @@ a:hover {
   display: inline-block;
   width: 270px;
   height: 120px;
-  top: 774px;
-  left: 215px;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 4px;
-  background-color:#F5F4FA;
+  background-color: var(--background-color);
+  margin-bottom: 30px;
 }
-.feature-item:nth-child(1)::before{
-background-image: url(./images/antenna.png);
-padding-top: 25px;
-padding-bottom: 100px;
+.feature-item:nth-child(1)::before {
+  background-image: url(./images/antenna.png);
 }
-.feature-item:nth-child(2)::before{
-  background-image: url(./images/clock.jng);
-  padding-top: 25px;
-padding-bottom: 100px;
+.feature-item:nth-child(2)::before {
+  background-image: url(./images/clock.png);
 }
-.feature-item:nth-child(3)::before{
-  background-image: url(/images/diagram.jng);
-  width: 70;
-  height: 70;
-  top: 799px;
-  left: 615px;
-  padding-top: 25px;
-padding-bottom: 100px;
+.feature-item:nth-child(3)::before {
+  background-image: url(./images/diagram.png);
 }
-.feature-item:nth-child(4)::before{
-  background-image: url(./images/astronaut.jng);
-  padding-top: 25px;
-padding-bottom: 100px;
+.feature-item:nth-child(4)::before {
+  background-image: url(./images/astronaut.png);
 }
 .servise-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .services-list {
@@ -149,24 +156,24 @@ padding-bottom: 100px;
   width: 100%;
 }
 .team {
- background-color: #F5F4FA;
- padding-top: 94px;
- padding-bottom: 654;
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 654;
 }
 .team-list {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  
 }
 .team-item {
-  background-color:#fff;
+  background-color: #fff;
   text-align: center;
   padding-bottom: 30px;
-  
+  margin-bottom: 94px;
 }
-.team-item:hover{
-  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F;
+.team-item:hover {
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
+    0px 1px 3px 0px #0000001f;
 }
 .team-title {
   text-align: center;
@@ -202,11 +209,9 @@ padding-bottom: 100px;
   color: #fff;
   padding: 40px 0;
 }
-.address-item {
+.address-link {
   color: #fff;
 }
-
-
 
 .portfolio {
   margin-bottom: 94px;
@@ -221,7 +226,7 @@ padding-bottom: 100px;
 }
 .filter-link {
   padding: 10px 20px;
-  background-color: #ffffff;
+  background-color: #f5f4fa;
   color: rgba(33, 33, 33, 1);
   text-decoration: none;
   font-size: 16px;
@@ -230,7 +235,8 @@ padding-bottom: 100px;
 .filter-link:hover {
   background-color: #2196f3;
   color: #ffffff;
-  box-shadow: 0px 2px 2px 0px #0000001F,0px 1px 2px 0px #00000014,0px 3px 1px 0px #0000001A;
+  box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+    0px 3px 1px 0px #0000001a;
 }
 .projects-list {
   display: flex;
@@ -263,4 +269,3 @@ padding-bottom: 100px;
   color: #757575;
   margin: 0 15px 15px 15px;
 }
-
