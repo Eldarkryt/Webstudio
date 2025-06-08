@@ -55,7 +55,7 @@ a:hover {
 }
 .header {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   padding: 20px 0;
   flex-wrap: wrap;
@@ -83,7 +83,12 @@ a:hover {
 .hero {
   text-align: center;
   padding: 200px 0;
-  background-image:linear-gradient(to center,rgba(47, 48, 58, 0.4)) url(./images/sima.png);
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(./images/sima.png);
   /* background-color: rgba(47, 48, 58, 1); */
   margin-bottom: 94px;
 }
@@ -210,7 +215,7 @@ a:hover {
   padding: 40px 0;
 }
 .address-link {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .portfolio {
