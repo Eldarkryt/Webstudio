@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webstudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -23,8 +26,17 @@
         </ul>
       </nav>
       <ul class="header-contact">
-        <li><a class="contact-email" href="">info@devstudio.com</a></li>
-        <li><a class="contact-phone" href="">+38 096 111 11 11</a></li>
+        <li><a class="contact-email" href="">
+          <svg class="header-link">
+            <use><a href="./images/symbol-defs.svg#icon-email"></a></use>
+          </svg>
+          info@devstudio.com
+        </a></li>
+        <li><a class="contact-phone" href="">
+          <svg class="header-link">
+            <use><a href="./images/symbol-defs.svg#icon-smartphone"></a></use>
+          </svg>
+          +38 096 111 11 11</a></li>
       </ul>
     </header>
     <main class="main">
@@ -36,99 +48,179 @@
       </section>
       <section class="features">
         <div class="container">
-        <ul class="features-list">
-          <li class="feature-item">
-            <h3 class="feature-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="feature-text">
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li class="feature-item">
-            <h3 class="feature-title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="feature-text">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li class="feature-item">
-            <h3 class="feature-title">ПЛАНУВАННЯ</h3>
-            <p class="feature-text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li class="feature-item">
-            <h3 class="feature-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="feature-text">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
-      </div>
+          <ul class="features-list">
+            <li class="feature-item">
+              <h3 class="feature-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="feature-text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="feature-item">
+              <h3 class="feature-title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="feature-text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="feature-item">
+              <h3 class="feature-title">ПЛАНУВАННЯ</h3>
+              <p class="feature-text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="feature-item">
+              <h3 class="feature-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="feature-text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="servise">
-        <div class="container ">
-        <h2 class="servise-title">Чим ми займаємося</h2>
-        <ul class="services-list">
-          <li class="service-item">
-            <img class="service-image" src="./images/Pershy.jpg" alt="" />
-          </li>
-          <li class="service-item">
-            <img class="service-image" src="./images/Drygi.jpg" alt="" />
-          </li>
-          <li class="service-item">
-            <img class="service-image" src="./images/trety.jpg" alt="" />
-          </li>
-        </ul>
-      </div>
+        <div class="container">
+          <h2 class="servise-title">Чим ми займаємося</h2>
+          <ul class="services-list">
+            <li class="service-item">
+              <img class="service-image" src="./images/Pershy.jpg" alt="" />
+            </li>
+            <li class="service-item">
+              <img class="service-image" src="./images/Drygi.jpg" alt="" />
+            </li>
+            <li class="service-item">
+              <img class="service-image" src="./images/trety.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="team">
         <div class="container">
-        <h2 class="team-title">Наша команда</h2>
-        <ul class="team-list">
-          <li class="team-item">
-            <img class="team-photo" src="./images/igor.jpg" alt="" />
-            <h4 class="member-name">Ігор Дем'яненко</h4>
-            <p class="member-role">Product Designer</p>
-          </li>
-          <li class="team-item">
-            <img class="team-photo" src="./images/olga.jpg" alt="" />
-            <h4 class="member-name">Ольга Рєпіна</h4>
-            <p class="member-role">Frontend Developer</p>
-          </li>
-          <li class="team-item">
-            <img class="team-photo" src="./images/mukola.jpg" alt="" />
-            <h4 class="member-name">Микола Тарасов</h4>
-            <p class="member-role">Marketing</p>
-          </li>
-          <li class="team-item">
-            <img class="team-photo" src="./images/muxa.jpg" alt="" />
-            <h4 class="member-name">Михайло Єрмаков</h4>
-            <p class="member-role">UI Designer</p>
-          </li>
-        </ul>
-    </div>
-    
+          <h2 class="team-title">Наша команда</h2>
+          <ul class="team-list">
+            <li class="team-item">
+              <img class="team-photo" src="./images/igor.jpg" alt="" />
+              <h4 class="member-name">Ігор Дем'яненко</h4>
+              <p class="member-role">Product Designer</p>
+            </li>
+            <li class="team-item">
+              <img class="team-photo" src="./images/olga.jpg" alt="" />
+              <h4 class="member-name">Ольга Рєпіна</h4>
+              <p class="member-role">Frontend Developer</p>
+            </li>
+            <li class="team-item">
+              <img class="team-photo" src="./images/mukola.jpg" alt="" />
+              <h4 class="member-name">Микола Тарасов</h4>
+              <p class="member-role">Marketing</p>
+            </li>
+            <li class="team-item">
+              <img class="team-photo" src="./images/muxa.jpg" alt="" />
+              <h4 class="member-name">Михайло Єрмаков</h4>
+              <p class="member-role">UI Designer</p>
+             <div>
+              <ul>
+                <li>
+                  <a href="" class="team-link">
+                  <svg class="team-svg">
+                    <use><a href="./images/symbol-defs.svg#icon-instagram"></a></use>
+                  </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="team-link">
+                  <svg class="team-svg">
+                    <use><a href="./images/symbol-defs.svg#icon-twitter"></a></use>
+                  </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="team-link">
+                  <svg class="team-svg">
+                    <use><a href="./images/symbol-defs.svg#icon-facebook"></a></use>
+                  </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="team-link">
+                  <svg class="team-svg">
+                    <use><a href="./images/symbol-defs.svg#icon-linkedin"></a></use>
+                  </svg>
+                  </a>
+                </li>
+              </ul>
+             </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="customers">
+        <div class="container">
+          <h2 class="customers-title">Постійні клієнти</h2>
+          <ul>
+            <li>
+              <a href="" class="customers-link">
+                <svg class="customers-svg">
+                  <use><a href="./images/symbol-defs.svg#icon-pershi-company"></a></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="customers-link">
+                <svg class="customers-svg">
+                  <use><a href="./images/symbol-defs.svg#icon-drygi-company"></a></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="customers-link">
+                <svg class="customers-svg">
+                  <use><a href="./images/symbol-defs.svg#icon-trety-company"></a></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="customers-link">
+                <svg class="customers-svg">
+                  <use><a href="./images/symbol-defs.svg#icon-chetverty-company"></a></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="customers-link">
+                <svg class="customers-svg">
+                  <use><a href="./images/symbol-defs.svg#icon-paty-company"></a></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="customers-link">
+                <svg class="customers-svg">
+                  <use><a href="./images/symbol-defs.svg#icon-shosti-company"></a></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-        <div class="container">
-      <a class="logo" href=""><span>Web</span>studio</a>
-      <address class="footer-address">
-        <ul class="address-list">
-          <li class="address-item">
-            <a class="address-link" href="">київ, пр-т Лесі Українки, 26</a>
-          </li>
-          <li class="address-item">
-            <a class="address-link" href="">info@devstudio.com</a>
-          </li>
-          <li class="address-item">
-            <a class="address-link" href="">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
-    </div>
+      <div class="container">
+        <a class="logo" href=""><span>Web</span>studio</a>
+        <address class="footer-address">
+          <ul class="address-list">
+            <li class="address-item">
+              <a class="address-link" href="">київ, пр-т Лесі Українки, 26</a>
+            </li>
+            <li class="address-item">
+              <a class="address-link" href="">info@devstudio.com</a>
+            </li>
+            <li class="address-item">
+              <a class="address-link" href="">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

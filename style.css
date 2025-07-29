@@ -73,7 +73,11 @@ a:hover {
 .nav-item {
   margin-left: 50px;
 }
-
+.header-link{
+  width: 10px;
+  height: 16px;
+  fill: rgba(117, 117, 117, 1);
+}
 .header-contact {
   display: flex;
   text-decoration: none;
@@ -208,6 +212,43 @@ a:hover {
 
 .member-role {
   color: #757575;
+ 
+}
+.team-link{
+
+}
+.team-svg{
+
+}
+ .customers{
+    
+ }
+ .customers-title{
+  font-family: "Roboto",sans-serif;
+font-weight: 700px;
+font-size: 36px;
+text-align: center;
+
+ }
+.customers-link{
+    display: inline-block;
+    border: 1px solid #757575;
+    border-radius: 4px;
+}
+
+.customers-link:hover,
+.customers-link:focus{
+
+}
+.customers-link:hover .customers-svg,
+.customers-link:focus .customers-svg{
+fill: #2196f3;
+}
+.customers-svg{
+    width: 37px;
+    height: 37px;
+    fill: rgba(33, 150, 243, 1);
+
 }
 .footer {
   background-color: #2f303a;
