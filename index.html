@@ -43,7 +43,46 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button">Замовити послугу</button>
+          <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button type="button" data-modal-close>
+          <svg class="modal-svg">
+            <use href="./images/symbol-defs2.svg#icon-krestic"></use>
+          </svg>
+        </button>
+            <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+            <ul class="modal-list">
+              <form action="">
+              <li class="modal-item">
+            <label for="" class="modal-ladel">ім'я
+              <input type="text" class="modal-input">
+            </label>
+            </li>
+            <li class="modal-item">
+            <label for="" class="modal-ladel">телефон
+              <input type="number" class="modal-input">
+            </label>
+            </li>
+            <li class="modal-item">
+            <label for="" class="modal-ladel">пошта
+              <input type="email" class="modal-input">
+            </label>
+            </li>
+            <li class="modal-item">
+              <label for="" class="modal-ladel">коментар
+              <input type="text" placeholder="Введіть text" class="modal-input">
+            </label>
+            </li>
+            </ul>
+            <label for="" class="modal-label-checkbox">Погоджуюся з розсилкою та приймаю <span><a href="" class="modal-link">Умови договору</a></span>
+              <input type="checkbox">
+            </label>
+            <button type="submit" class="btn-modal">Відправити</button>
+            </form>
+            </div>
+          </div>
+
         </div>
       </section>
       <section class="features">
@@ -126,28 +165,28 @@
                 <li>
                   <a href="" class="team-link">
                   <svg class="team-svg">
-                    <use><a href="./images/symbol-defs.svg#icon-instagram"></a></use>
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                   </a>
                 </li>
                 <li>
                   <a href="" class="team-link">
                   <svg class="team-svg">
-                    <use><a href="./images/symbol-defs.svg#icon-twitter"></a></use>
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                   </a>
                 </li>
                 <li>
                   <a href="" class="team-link">
                   <svg class="team-svg">
-                    <use><a href="./images/symbol-defs.svg#icon-facebook"></a></use>
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                   </a>
                 </li>
                 <li>
                   <a href="" class="team-link">
                   <svg class="team-svg">
-                    <use><a href="./images/symbol-defs.svg#icon-linkedin"></a></use>
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
                   </a>
                 </li>
@@ -164,42 +203,42 @@
             <li>
               <a href="" class="customers-link">
                 <svg class="customers-svg">
-                  <use><a href="./images/symbol-defs.svg#icon-pershi-company"></a></use>
+                  <use href="./images/symbol-defs.svg#icon-pershi-company"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="" class="customers-link">
                 <svg class="customers-svg">
-                  <use><a href="./images/symbol-defs.svg#icon-drygi-company"></a></use>
+                  <use href="./images/symbol-defs.svg#icon-drygi-company"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="" class="customers-link">
                 <svg class="customers-svg">
-                  <use><a href="./images/symbol-defs.svg#icon-trety-company"></a></use>
+                  <use href="./images/symbol-defs.svg#icon-trety-company"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="" class="customers-link">
                 <svg class="customers-svg">
-                  <use><a href="./images/symbol-defs.svg#icon-chetverty-company"></a></use>
+                  <use href="./images/symbol-defs.svg#icon-chetverty-company"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="" class="customers-link">
                 <svg class="customers-svg">
-                  <use><a href="./images/symbol-defs.svg#icon-paty-company"></a></use>
+                  <use href="./images/symbol-defs.svg#icon-paty-company"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="" class="customers-link">
                 <svg class="customers-svg">
-                  <use><a href="./images/symbol-defs.svg#icon-shosti-company"></a></use>
+                  <use href="./images/symbol-defs.svg#icon-shosti-company"></use>
                 </svg>
               </a>
             </li>
@@ -225,5 +264,6 @@
         </address>
       </div>
     </footer>
+    <script src="./modal.js"></script>
   </body>
 </html>

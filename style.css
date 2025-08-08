@@ -73,7 +73,7 @@ a:hover {
 .nav-item {
   margin-left: 50px;
 }
-.header-link{
+.header-link {
   width: 10px;
   height: 16px;
   fill: rgba(117, 117, 117, 1);
@@ -151,11 +151,10 @@ a:hover {
   background-image: url(./images/astronaut.png);
 }
 .servise-title {
- font-family: "Roboto",sans-serif;
-font-weight: 700;
-font-size: 36px;
-text-align: center;
-
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
 }
 
 .services-list {
@@ -167,17 +166,17 @@ text-align: center;
 .service-image {
   width: 100%;
 }
-.service-item{
+.service-item {
   position: relative;
 }
-.servise-text{
-  font-family: "Roboto",sans-serif;
-font-weight: 700;
-font-size: 17px;
-text-align: center;
-padding: 27px;
-color: rgba(255, 255, 255, 1);
-    position: absolute;
+.servise-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+  padding: 27px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
   width: 100%;
   bottom: 3px;
   background-color: rgba(47, 48, 58, 0.8);
@@ -193,7 +192,6 @@ color: rgba(255, 255, 255, 1);
   gap: 30px;
 }
 .team-item {
-  
   background-color: #fff;
   text-align: center;
   padding-bottom: 30px;
@@ -231,43 +229,36 @@ color: rgba(255, 255, 255, 1);
 
 .member-role {
   color: #757575;
- 
 }
-.team-link{
-
+.team-link {
 }
-.team-svg{
-
+.team-svg {
 }
- .customers{
-    
- }
- .customers-title{
-  font-family: "Roboto",sans-serif;
-font-weight: 700px;
-font-size: 36px;
-text-align: center;
-
- }
-.customers-link{
-    display: inline-block;
-    border: 1px solid #757575;
-    border-radius: 4px;
+.customers {
+}
+.customers-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700px;
+  font-size: 36px;
+  text-align: center;
+}
+.customers-link {
+  display: inline-block;
+  border: 1px solid #757575;
+  border-radius: 4px;
 }
 
 .customers-link:hover,
-.customers-link:focus{
-
+.customers-link:focus {
 }
 .customers-link:hover .customers-svg,
-.customers-link:focus .customers-svg{
-fill: #2196f3;
+.customers-link:focus .customers-svg {
+  fill: #2196f3;
 }
-.customers-svg{
-    width: 37px;
-    height: 37px;
-    fill: rgba(33, 150, 243, 1);
-
+.customers-svg {
+  width: 37px;
+  height: 37px;
+  fill: rgba(33, 150, 243, 1);
 }
 .footer {
   background-color: #2f303a;
@@ -333,4 +324,101 @@ fill: #2196f3;
   font-size: 14px;
   color: #757575;
   margin: 0 15px 15px 15px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+.modal {
+  width: 528px;
+  height: 581px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+.modal-ladel {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(117, 117, 117, 1);
+}
+.modal-input span {
+    width: 448px;
+  height: 120px;
+  margin: 10px 40px;
+}
+.modal-input {
+  width: 448px;
+  height: 40px;
+  margin: 10px 40px;
+}
+.modal-input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  padding-left: 12px;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-label-checkbox {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(117, 117, 117, 1);
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.modal-label-checkbox span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: underline;
+  color: rgba(33, 150, 243, 1);
+}
+.modal-link {
+  color: rgba(33, 150, 243, 1);
+}
+.btn-modal {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  background-color: rgba(33, 150, 243, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.modal-svg{
+    width: 11px;
+    height: 11px;
+    
+}
+.is-hidden{
+    display: none;
+}
+.no-scroll{
+    overflow: hidden;
 }
