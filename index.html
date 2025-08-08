@@ -46,8 +46,8 @@
           <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <button type="button" data-modal-close>
-          <svg class="modal-svg">
+              <button type="button" data-modal-close class="close-button">
+          <svg class="close-button-svg">
             <use href="./images/symbol-defs2.svg#icon-krestic"></use>
           </svg>
         </button>
@@ -58,16 +58,25 @@
             <label for="" class="modal-ladel">ім'я
               <input type="text" class="modal-input">
             </label>
+            <svg class="modal-svg">
+            <use href="./images/symbol-defs2.svg#icon-people"></use>
+          </svg>
             </li>
             <li class="modal-item">
             <label for="" class="modal-ladel">телефон
               <input type="number" class="modal-input">
             </label>
+            <svg class="modal-svg">
+            <use href="./images/symbol-defs2.svg#icon-telephone"></use>
+          </svg>
             </li>
             <li class="modal-item">
             <label for="" class="modal-ladel">пошта
               <input type="email" class="modal-input">
             </label>
+            <svg class="modal-svg">
+            <use href="./images/symbol-defs2.svg#icon-poshta"></use>
+          </svg>
             </li>
             <li class="modal-item">
               <label for="" class="modal-ladel">коментар
@@ -76,7 +85,7 @@
             </li>
             </ul>
             <label for="" class="modal-label-checkbox">Погоджуюся з розсилкою та приймаю <span><a href="" class="modal-link">Умови договору</a></span>
-              <input type="checkbox">
+              <input type="checkbox" class="input-checkbox">
             </label>
             <button type="submit" class="btn-modal">Відправити</button>
             </form>

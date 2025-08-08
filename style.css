@@ -348,12 +348,18 @@ a:hover {
   transform: translate(-50%, -50%);
 }
 .modal-title {
+  position: relative;
+  top: -35px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 20px;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 12px;
+}
+.modal-list{
+position:relative;
+top: -35px;
 }
 .modal-ladel {
   font-family: "Roboto", sans-serif;
@@ -362,7 +368,7 @@ a:hover {
   color: rgba(117, 117, 117, 1);
 }
 .modal-input span {
-    width: 448px;
+  width: 448px;
   height: 120px;
   margin: 10px 40px;
 }
@@ -385,6 +391,11 @@ a:hover {
   color: rgba(117, 117, 117, 1);
   margin-top: 20px;
   margin-bottom: 30px;
+}
+.input-checkbox{
+  width: 16px;
+height: 15px;
+border: rgba(33, 33, 33, 1);
 }
 .modal-label-checkbox span {
   font-family: "Roboto", sans-serif;
@@ -411,14 +422,30 @@ a:hover {
   margin-top: 30px;
   margin-bottom: 40px;
 }
-.modal-svg{
-    width: 11px;
-    height: 11px;
-    
+.modal-svg {
+  position: relative;
+    width: 13px;
+  height: 13px;
+  top: -41px;
+  left: -200px;
 }
-.is-hidden{
-    display: none;
+.close-button{
+  width: 30px;
+height: 30px;
+border-radius: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: relative;
+  top: -35px;
+  left: 245px;
 }
-.no-scroll{
-    overflow: hidden;
+.close-button-svg{
+  width: 11px;
+  height: 11px;
+}
+.is-hidden {
+  display: none;
+}
+.no-scroll {
+  overflow: hidden;
 }
