@@ -73,6 +73,39 @@ a:hover {
 .nav-item {
   margin-left: 50px;
 }
+.nav-item:hover:nth-child(1)::after {
+  content: "";
+  display: inline-block;
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgba(33, 150, 243, 1);
+  position: relative;
+  top: 30px;
+  right: 45px;
+}
+.nav-item:hover:nth-child(2)::after {
+  content: "";
+  display: inline-block;
+  width: 78px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgba(33, 150, 243, 1);
+  position: relative;
+  top: 30px;
+  right: 75px;
+}
+.nav-item:hover:nth-child(3)::after {
+  content: "";
+  display: inline-block;
+  width: 70px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgba(33, 150, 243, 1);
+  position: relative;
+  top: 30px;
+  right: 6px;
+}
 .header-link {
   width: 10px;
   height: 16px;
@@ -231,10 +264,20 @@ a:hover {
   color: #757575;
 }
 .team-link {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: rgba(175, 177, 184, 1);
 }
 .team-svg {
+  width: 20px;
+  height: 20px;
+  fill: rgba(175, 177, 184, 1);
+}
+.team-svg:hover {
 }
 .customers {
+  display: flex;
 }
 .customers-title {
   font-family: "Roboto", sans-serif;
@@ -253,12 +296,10 @@ a:hover {
 }
 .customers-link:hover .customers-svg,
 .customers-link:focus .customers-svg {
-  fill: #2196f3;
 }
 .customers-svg {
   width: 37px;
   height: 37px;
-  fill: rgba(33, 150, 243, 1);
 }
 .footer {
   background-color: #2f303a;
@@ -325,7 +366,6 @@ a:hover {
   color: #757575;
   margin: 0 15px 15px 15px;
 }
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -357,9 +397,9 @@ a:hover {
   margin-top: 40px;
   margin-bottom: 12px;
 }
-.modal-list{
-position:relative;
-top: -35px;
+.modal-list {
+  position: relative;
+  top: -35px;
 }
 .modal-ladel {
   font-family: "Roboto", sans-serif;
@@ -367,15 +407,14 @@ top: -35px;
   font-size: 12px;
   color: rgba(117, 117, 117, 1);
 }
-.modal-input span {
-  width: 448px;
-  height: 120px;
-  margin: 10px 40px;
-}
 .modal-input {
   width: 448px;
   height: 40px;
   margin: 10px 40px;
+}
+.modal-input-text {
+  width: 448px;
+  height: 120px;
 }
 .modal-input::placeholder {
   font-family: "Roboto", sans-serif;
@@ -392,10 +431,13 @@ top: -35px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
-.input-checkbox{
+.input-checkbox {
   width: 16px;
-height: 15px;
-border: rgba(33, 33, 33, 1);
+  height: 15px;
+  border: rgba(33, 33, 33, 1);
+  position: relative;
+  right: 390px;
+  top: 2px;
 }
 .modal-label-checkbox span {
   font-family: "Roboto", sans-serif;
@@ -424,22 +466,22 @@ border: rgba(33, 33, 33, 1);
 }
 .modal-svg {
   position: relative;
-    width: 13px;
+  width: 13px;
   height: 13px;
   top: -41px;
   left: -200px;
 }
-.close-button{
+.close-button {
   width: 30px;
-height: 30px;
-border-radius: 100px;
+  height: 30px;
+  border-radius: 100px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
   position: relative;
-  top: -35px;
+  top: 3px;
   left: 245px;
 }
-.close-button-svg{
+.close-button-svg {
   width: 11px;
   height: 11px;
 }
