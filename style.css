@@ -86,7 +86,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   transition-duration: 0.3s;
   position: absolute;
   top: 66px;
-  right: 1260px;
+  left: 823px;
 }
 .nav-item:hover:nth-child(2)::after {
   content: "";
@@ -97,7 +97,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   background-color: rgba(33, 150, 243, 1);
   position: absolute;
   top: 66px;
-  right: 1119px;
+  right: 1124px;
 }
 .nav-item:hover:nth-child(3)::after {
   content: "";
@@ -108,11 +108,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   background-color: rgba(33, 150, 243, 1);
   position: absolute;
   top: 66px;
-  right: 990px;
+  right: 995px;
 }
-.header-link {
-  width: 10px;
-  height: 16px;
+.header-link{
+  width: 16px;
+  height: 12px;
   fill: rgba(117, 117, 117, 1);
 }
 .header-contact {
@@ -229,6 +229,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   justify-content: space-between;
   gap: 30px;
 }
+.team-icone{
+  display: flex;
+  gap: 10px;
+  padding-right: 10px;
+}
 .team-item {
   background-color: #fff;
   text-align: center;
@@ -297,24 +302,22 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 .customers-svg {
   display: inline-block;
-  border: 1px solid #757575;
+  border: 1px solid rgba(175, 177, 184, 1);
+  fill: rgba(175, 177, 184, 1);
   border-radius: 4px;
 width: 170px;
 height: 92px;
-border-width: 1px;
 }
 
 .customers-link:hover,
 .customers-link:focus {
   border: 1px solid rgba(33, 150, 243, 1);
+    fill: rgba(33, 150, 243, 1);
 }
 .customers-link:hover .customers-svg,
 .customers-link:focus .customers-svg {
-  border: 1px solid rgba(33, 150, 243, 1);;
-}
-.customers-link {
-  width: 3px;
-  height: 3px;
+  border: 1px solid rgba(33, 150, 243, 1);
+  fill: rgba(33, 150, 243, 1);
 }
 .footer {
   background-color: #2f303a;
