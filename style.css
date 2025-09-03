@@ -360,6 +360,8 @@ a:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-icone-div{
+  padding-top: 12px;
+    padding-right: 900px;
 }
 .footer-icone-title{
   font-family: "Roboto",sans-serif;
